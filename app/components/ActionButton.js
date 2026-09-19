@@ -1,4 +1,4 @@
-export default function ActionButton({ icon, label, onClick, secondary = false }) {
+export default function ActionButton({ icon = "", label, onClick, secondary = false }) {
   if (secondary) {
     return (
       <button
