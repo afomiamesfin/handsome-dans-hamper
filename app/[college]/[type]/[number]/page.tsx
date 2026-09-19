@@ -41,7 +41,7 @@ export default function MachinePage() {
     <main className="max-w-md mx-auto min-h-screen bg-white flex flex-col gap-4 p-6">
       {view === "home" && (
         <>
-            <a href="/" className="text-sm text-muted underline">← All machines</a>
+        <a href="/" className="text-sm text-muted underline">← DEMO HOME PAGE</a>
           <div className="flex items-start justify-between gap-3">
             <h1 className="font-heading text-3xl text-ink leading-tight">
               Welcome to<br />Handsome Dan's Hamper!
@@ -177,7 +177,7 @@ export default function MachinePage() {
           </div>
           <ActionButton label="THIS IS ME!" onClick={() => setView("mine-confirmed")} />
           <ActionButton secondary label="Not me... but these are my clothes!" onClick={() => setView("mine-confirmed")} />
-          <ActionButton secondary label="Not my clothes" onClick={() => { setNetidInput(""); setView("incorrect-logs"); }} />
+          <ActionButton secondary label="Not my clothes" onClick={() => { setCubbyInput(""); setView("cubby-entry"); }} />
         </>
       )}
 
@@ -249,9 +249,7 @@ export default function MachinePage() {
             <h1 className="font-heading text-2xl text-ink leading-tight">Enter the<br />cubby number!</h1>
             <img src="/images/dog-main.png" alt="" className="w-12 h-12 object-contain" />
           </div>
-          <div className="bg-ink rounded-2xl p-8 flex items-center justify-center">
-            <span className="text-white text-sm">[ cubby illustration ]</span>
-          </div>
+          <img src="/images/cubby.png" alt="" className="w-40 h-40 object-contain self-center" />
           <div className="flex flex-col gap-2">
             <label htmlFor="cubby1" className="font-heading text-xl">Cubby #</label>
             <div className="flex gap-2">
